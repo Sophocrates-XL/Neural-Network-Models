@@ -48,9 +48,9 @@ x_test = x_test.reshape(x_test.shape[0], 28, 28, 1)
 
 # Compiles, trains and evaluates the CNN model.
 model = Sequential([
-    layers.Conv2D(filters = 32, kernel_size = (3, 3), strides = 1, padding = "same",
+    layers.Conv2D(filters = 32, kernel_size = (1, 5), strides = 1, padding = "same",
         activation = layers.ReLU()),
-    layers.Conv2D(filters = 32, kernel_size = (3, 3), strides = 1, padding = "same",
+    layers.Conv2D(filters = 32, kernel_size = (5, 1), strides = 1, padding = "same",
         activation = layers.ReLU()),
     layers.Conv2D(filters = 64, kernel_size = (3, 3), strides = 1, padding = "same",
         activation = layers.ReLU()),
